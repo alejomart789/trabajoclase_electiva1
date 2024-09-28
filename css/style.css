@@ -1,0 +1,128 @@
+/* General styles */
+body {
+    background-color: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.login-container {
+    background-color: #16213e;
+    padding: 3rem;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #1f4068;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+    transition: background-color 0.3s;
+}
+
+.input-container i {
+    color: #00f3ff;
+    margin-right: 0.8rem;
+}
+
+.input-container input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.input-container:hover {
+    background-color: #0f3460;
+}
+
+button.login-btn {
+    background-color: #00f3ff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #16213e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.login-btn:hover {
+    background-color: #00c3cc;
+}
+
+.forgot-password {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #00f3ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button.login-btn {
+        font-size: 1rem;
+    }
+}
+
+/* Animación de shake para cuando el login falla */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}

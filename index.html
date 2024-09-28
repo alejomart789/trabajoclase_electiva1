@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Iniciar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="login-container">
-        <h1>gratafy</h1>
+        <h1>ELECTIVA</h1>
         <form id="login-form">
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Log in</button>
+            <div class="input-container">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-container">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="login-btn">Iniciar</button>
         </form>
-        <a href="#" class="forgot-password">Forgot your password?</a>
+        <a href="#" class="forgot-password">¿Olvidó la contraseña?</a>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
