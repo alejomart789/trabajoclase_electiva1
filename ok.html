@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Completo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="ok-container">
+        <h1>¡Registrado Correctamente!</h1>
+        <div id="datos-registrados"></div>
+    </div>
+    <script>
+        const datosRegistrados = JSON.parse(localStorage.getItem('datosRegistrados'));
+        const datosDiv = document.getElementById('datos-registrados');
+
+        if (datosRegistrados) {
+            datosDiv.innerHTML = `
+                <p><strong>Nombre:</strong> ${datosRegistrados.nombre}</p>
+                <p><strong>Apellidos:</strong> ${datosRegistrados.apellidos}</p>
+                <p><strong>Identificación:</strong> ${datosRegistrados.identificacion}</p>
+                <p><strong>Correo:</strong> ${datosRegistrados.correo}</p>
+                <p><strong>Número de Celular:</strong> ${datosRegistrados.telefono}</p>
+            `;
+        } else {
+            datosDiv.innerHTML = "<p>No se encontraron datos registrados.</p>";
+        }
+    </script>
+</body>
+</html>

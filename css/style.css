@@ -126,3 +126,44 @@ button.login-btn:hover {
 .shake {
     animation: shake 0.5s ease-in-out;
 }
+
+.register-container {
+    background-color: #16213e;
+    padding: 3rem;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease;
+}
+
+button.register-btn {
+    background-color: #00f3ff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #16213e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.register-btn:hover {
+    background-color: #00c3cc;
+}
+
+.ok-container {
+    background-color: #16213e;
+    padding: 3rem;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease;
+}
